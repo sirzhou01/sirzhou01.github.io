@@ -1,25 +1,161 @@
-extends includes/layout.pug
+<html>
 
-block content
-  article#post(class="")
-    #article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      !=partial('includes/share/index', {}, {cache:theme.fragment_cache})
+<head>
+    <meta charset="utf-8">
+    
+    <title>新的博客 | MAX PPF</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon/favicon.ico">
+    
+<link rel="stylesheet" href="/css/main.css">
+
+    
+<link rel="stylesheet" href="/css/tagplugins.css">
+
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+    
+
+
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom.xml" title="MAX PPF" type="application/atom+xml" />
+    
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div class="blog-header">
+   <a id="menu-nav-icon"><img src="/image/menu.png"/></a>
+   <div class="nav-container">
+     <nav id="main-nav">
+       
+         <a class="main-nav-link" href="/">Home</a>
+       
+         <a class="main-nav-link" href="/archives">Archives</a>
+       
+     </nav>
+   </div>
+   <!--
+   <div id="search-form-wrap">
+     <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+   </div>
+ -->
+    <h1 class="blog-title">MAX PPF</h1>
+    <p class="lead blog-description"></p>
+</div>
+
+  <div id='main-part'>
+      <div class="main">
+<div class="blog-post">
+    <!-- Title -->
+    <h1 class="blog-post-title">
+        <a href="/2020/06/06/MAX隐形车衣/">
+            新的博客
+        </a>
+    </h1>
+    <!-- Date and Author -->
+    <p class="blog-post-meta">
+        2020-06-06
         
-    if theme.reward.enable
-      !=partial('includes/post/reward', {}, {cache:theme.fragment_cache})
+    </p>
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .post-ad!=theme.ad.post
+    
 
-    include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
-    if page.comments !== false
-      include includes/comments/index.pug
+    <!-- Content -->
+    <p>##第一篇</p>
+<p>详情…</p>
+<p>##第二篇</p>
+<p>详情…</p>
+<p>##致谢</p>
+<p><a href="http://www.maxppf.com/" target="_blank" rel="noopener">http://www.maxppf.com/</a></p>
+
+
+    <!-- Social share choices -->
+    
+  <div id="social-share">
+    <a data-url="http://yoursite.com/2020/06/06/MAX%E9%9A%90%E5%BD%A2%E8%BD%A6%E8%A1%A3/" href="https://plus.google.com/share?url=" target="_blank" rel="noopener" class="googleplus"><img src="/image/googleplusicon.png" alt=""/></a>
+    <a data-url="http://yoursite.com/2020/06/06/MAX%E9%9A%90%E5%BD%A2%E8%BD%A6%E8%A1%A3/" href="https://twitter.com/intent/tweet?url=" target="_blank" rel="noopener" class="twitter"><img src="/image/twittericon.png" alt=""/></a>
+    <a data-url="http://yoursite.com/2020/06/06/MAX%E9%9A%90%E5%BD%A2%E8%BD%A6%E8%A1%A3/" href="http://pinterest.com/pin/create/button/?url=" target="_blank" rel="noopener" class="pinterest"><img src="/image/pinteresticon.png" alt=""/></a>
+    <a data-url="http://yoursite.com/2020/06/06/MAX%E9%9A%90%E5%BD%A2%E8%BD%A6%E8%A1%A3/" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener" class="facebook"><img src="/image/facebookicon.png" alt=""/></a>
+  </div>
+
+
+
+
+
+<!--
+
+
+https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/06/06/MAX%E9%9A%90%E5%BD%A2%E8%BD%A6%E8%A1%A3/
+http://yoursite.com/2020/06/06/MAX%25E9%259A%2590%25E5%25BD%25A2%25E8%25BD%25A6%25E8%25A1%25A3/
+-->
+
+
+
+    <hr />
+
+
+    <!-- Tags and Categories links -->
+    
+
+    
+
+
+    <!-- Comment using disqus -->
+    
+
+</div>
+</div>
+
+
+  </div>
+  <!-- Footer -->
+  <div id="footer">
+  <div id="footer-social">
+    
+    
+    
+    
+    
+    
+</div>
+
+  <p id="footer-info">
+    &copy; 2020 max ppf<br>
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -
+    Theme <a href="https://github.com/Suolawangzai/hexo-theme-nebula" target="_blank">nebula</a>
+  </p>
+
+  <div id="busuanzi">
+    <span id="busuanzi_container_site_pv">
+      &hearts;
+    Total visits: <span id="busuanzi_value_site_pv"></span>
+    </span>
+  </div>
+  <!--
+  <div id="footer-info">
+    &copy; 2020 max ppf<br>
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+  </div>
+-->
+</div>
+
+  <!-- After footer scripts -->
+  <!-- Disqus Comments -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+</body>
+
+</html>
