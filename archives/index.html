@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
-    <meta name="keywords" content="TriDiamond Obsidian,"> 
+    <meta name="keywords" content="MAX PAINT PROTECTION FILM,"> 
     
     <meta name="author" content="MAX PPF"> 
     <link rel="alternative" href="atom.xml" title="MAX隐形车衣" type="application/atom+xml"> 
@@ -344,7 +344,7 @@ Qu...
         var typedTextEl = $('.typed-text');
         if (typedTextEl && typedTextEl.length > 0) {
             var typed = new Typed('.typed-text', {
-                strings: ["Think like an artist, develop like an artisan", "艺术家思维去思考问题，工匠创造精神去开发"],
+                strings: ["Think like an artist, develop like an artisan", "以艺术家思维去思考问题，以工匠创造精神去研发产品"],
                 typeSpeed: 90,
                 loop: true,
                 loopCount: Infinity,
@@ -360,6 +360,40 @@ Qu...
     }
 </script>
 
+
+    
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+    <script>
+
+        var valine = new Valine();
+
+        function initValine(path) {
+            if (!path) path = window.location.pathname;
+            let language = 'zh-cn';
+            if (!language) {
+                language = 'en';
+            } else {
+                language = language.toLowerCase();
+            }
+            valine.init({
+                el: '#vcomments',
+                appId: 'QHCOIEBlyjBUMAjaE5ilzafk-gzGzoHsz',
+                appKey: 'ggeGwz8ypB9uiAIYSRH5T0PF',
+                notify: 'false',
+                verify: 'false',
+                avatar: 'mp',
+                placeholder: 'Leave your throughs behind~',
+                visitor: 'true',
+                path: path,
+                lang: language
+            });
+        }
+
+        $(document).ready(function () {
+            initValine();
+        });
+    </script>
 
 
 
